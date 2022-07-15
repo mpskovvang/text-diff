@@ -43,7 +43,7 @@ class TextDiff
 	 *
 	 * @return Text_Diff
 	 */
-	protected static function diff($left_string, $right_string)
+	public static function diff($left_string, $right_string)
 	{
 		$left_string  = self::normalize_whitespace($left_string);
 		$right_string = self::normalize_whitespace($right_string);
